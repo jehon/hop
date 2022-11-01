@@ -1,0 +1,42 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    background-color: black;
+    color: white;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#content>* {
+    min-width: 60%;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+#status {}
+
+#logs {
+    flex-basis: 100px;
+    background-color: gray;
+
+    overflow-y: scroll;
+
+    text-align: left;
+}

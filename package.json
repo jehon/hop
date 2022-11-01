@@ -24,6 +24,6 @@
     },
     "scripts": {
         "postinstall": "type -p husky >/dev/null && husky install || true",
-        "lint": "eslint jehon*/**/node/**/*.{mjs,js,jsx}"
+        "test": "eslint **/*.{mjs,js,jsx}"
     }
 }
