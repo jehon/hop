@@ -1,0 +1,29 @@
+{
+    "name": "hop",
+    "version": "1.0.0",
+    "main": "index.html",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jehon/hop.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jehon/hop/issues"
+    },
+    "homepage": "https://github.com/jehon/hop#readme",
+    "type": "module",
+    "devDependencies": {
+        "@babel/core": "7.19.6",
+        "@babel/eslint-parser": "7.19.1",
+        "@babel/plugin-syntax-top-level-await": "7.14.5",
+        "@commitlint/cli": "17.2.0",
+        "@commitlint/config-conventional": "17.2.0",
+        "eslint": "8.26.0",
+        "husky": "8.0.1"
+    },
+    "scripts": {
+        "postinstall": "type -p husky >/dev/null && husky install || true",
+        "lint": "eslint jehon*/**/node/**/*.{mjs,js,jsx}"
+    }
+}
