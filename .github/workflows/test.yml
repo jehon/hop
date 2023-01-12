@@ -1,0 +1,25 @@
+name: Makefile
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  ga-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Start devcontainer
+      uses: jehon/actions-devcontainer@main
+      with:
+        action: start
+
+    - name: lint
+      uses: jehon/actions-devcontainer@main
+      with:
+        run: npm run lint
