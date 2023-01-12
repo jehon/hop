@@ -1,4 +1,4 @@
-name: Makefile
+name: test.yml
 
 on:
   push:
