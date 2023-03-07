@@ -14,12 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Start devcontainer
-      uses: jehon/actions-devcontainer@main
+    - uses: devcontainers/ci@v0.3
       with:
-        action: start
-
-    - name: lint
-      uses: jehon/actions-devcontainer@main
-      with:
-        run: npm run lint
+        runCmd: npm run lint
