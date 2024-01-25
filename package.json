@@ -20,7 +20,7 @@
         "@commitlint/cli": "18.5.0",
         "@commitlint/config-conventional": "18.5.0",
         "eslint": "8.56.0",
-        "husky": "8.0.3"
+        "husky": "9.0.1"
     },
     "scripts": {
         "postinstall": "type -p husky >/dev/null && husky install || true",
